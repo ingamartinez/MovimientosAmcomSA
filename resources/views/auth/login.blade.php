@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flat Admin V.3 - Free flat-design bootstrap administrator templates</title>
+    <title>Movimientos AmcomSA | Login</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,21 +30,23 @@
                                 <img src="{{asset('images/logo.png')}}" alt="Amcom SA" class="img-responsive" height="200" width="500">
                             </div>
                         </div>
-                        <form action="/" method="POST">
+                        <form action="{{route('login.store')}}" method="POST">
+                            {{method_field('POST')}}
+                            {{csrf_field()}}
                             <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon1">
                                     <i class="fa fa-user" aria-hidden="true"></i>
                                 </span>
-                                <input type="number" class="form-control" placeholder="Username">
+                                <input type="number" class="form-control" placeholder="Usuario" name="username">
                             </div>
                             <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon2">
                                     <i class="fa fa-key" aria-hidden="true"></i>
                                 </span>
-                                <input type="number" class="form-control" placeholder="Password">
+                                <input type="number" class="form-control" placeholder="Contraseña" name="password">
                             </div>
                             <div class="text-center">
-                                <input type="submit" class="btn btn-success btn-submit" value="Login">
+                                <input type="submit" class="btn btn-success btn-submit" value="Entrar">
                             </div>
                         </form>
                         <div class="form-line">
@@ -54,7 +56,7 @@
                             <button type="button" class="btn btn-default btn-sm btn-social __facebook">
                                 <div class="info">
                                     <i class="icon fa fa-facebook-official" aria-hidden="true"></i>
-                                    <span class="title">Login with Facebook</span>
+                                    <span class="title">Entrar con Facebook</span>
                                 </div>
                             </button>
                         </div>
@@ -68,8 +70,8 @@
 
 </div>
 
-<script type="text/javascript" src="{{asset('js/vendor.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/app.js')}}"></script>
+{{--<script type="text/javascript" src="{{asset('js/vendor.js')}}"></script>--}}
+{{--<script type="text/javascript" src="{{asset('js/app.js')}}"></script>--}}
 
 </body>
 </html>
