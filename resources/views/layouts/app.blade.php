@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/theme/red.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/theme/yellow.css')}}">
 
+    <link rel="stylesheet" type="text/css" href="{{asset('css/custom.css')}}">
+
 </head>
 <body>
 <div class="app app-blue-sky">

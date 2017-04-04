@@ -32,3 +32,23 @@
     background-color: #29c75f;
     box-shadow: 0 2px 3px rgba(41, 199, 95, 0.3);
 }
+
+.card.card-banner .card-body .content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 12rem;
+    padding-right: 2rem;
+}
