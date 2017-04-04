@@ -52,3 +52,11 @@
     padding-left: 12rem;
     padding-right: 2rem;
 }
+
+.card.card-banner .card-body .content .value {
+    font-size: 4em;
+    line-height: 1;
+    font-weight: 200;
+    padding-top: 2rem;
+    
+}

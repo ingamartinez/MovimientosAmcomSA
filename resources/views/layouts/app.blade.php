@@ -79,29 +79,45 @@
                             </button>
                         </li>
                         <li class="logo">
-                            <a class="navbar-brand" href="#">Amcom SA</a>
+                            <a class="navbar-brand" href="{{url('reportes')}}">Amcom S.A</a>
                         </li>
                         <li>
                             <button type="button" class="navbar-toggle">
-                                <img class="profile-img" src="{{url('images/profile.png')}}">
+                                <img class="profile-img" src="http://www.freeiconspng.com/uploads/account-icon-33.png">
                             </button>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
+                        {{--<li class="dropdown notification">--}}
+                            {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--}}
+                                {{--<div class="icon"><i class="fa fa-power-off" aria-hidden="true"></i></div>--}}
+                                {{--<div class="title">Cerrar Sesión</div>--}}
+                                {{----}}
+                            {{--</a>--}}
+                            {{--<div class="dropdown-menu">--}}
+                                {{--<ul>--}}
+                                    {{--<li class="dropdown-header">Ordering</li>--}}
+                                    {{--<li class="dropdown-empty">No New Ordered</li>--}}
+                                    {{--<li class="dropdown-footer">--}}
+                                        {{--<a href="#">View All <i class="fa fa-angle-right" aria-hidden="true"></i></a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</div>--}}
+                        {{--</li>--}}
+
+
                         <li class="dropdown profile">
-                            <a href="#" class="dropdown-toggle"  data-toggle="dropdown">
+                            <a href="{{url('logout')}}" class="dropdown-toggle"  data-toggle="dropdown-menu">
                                 <img class="profile-img" src="http://www.freeiconspng.com/uploads/account-icon-33.png">
-                                <div class="title">Profile</div>
+                                <div class="title">Cerrar Sesión</div>
                             </a>
+
                             <div class="dropdown-menu">
                                 <div class="profile-info">
                                     <h4 class="username">{{ucfirst(auth()->user()->name)}}</h4>
                                 </div>
                                 <ul class="action">
-                                    {{--<li><a href="#">Profile</a></li>--}}
-                                    {{--<li><a href="#"><span class="badge badge-danger pull-right">5</span>My Inbox</a></li>--}}
-                                    {{--<li><a href="#">Setting</a></li>--}}
-                                    <li><a href="{{url('logout')}}">Logout</a></li>
+                                    <li><a href="{{url('logout')}}">Cerrar Sesión</a></li>
                                 </ul>
                             </div>
                         </li>
