@@ -35,7 +35,7 @@
 
     <div class="row">
         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <a href="http://amcomsa.com.co/Como_Vamos_Diario.xlsx" class="card card-banner card-green-light">
+            <a href="http://comovamos.amcomsa.com.co/comovamos/Como_Vamos_Diario.xlsx" class="card card-banner card-green-light">
                 <div class="card-body">
                     <i class="icon fa fa fa-line-chart fa-4x"></i>
                     <div class="content">
@@ -47,7 +47,7 @@
 
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <a href="http://amcomsa.com.co/Impactos_Diario.xlsx" class="card card-banner card-blue-light">
+            <a href="http://comovamos.amcomsa.com.co/impactosdiarios/Impactos_Diario.xlsx" class="card card-banner card-blue-light">
                 <div class="card-body">
                     <i class="icon fa fa-area-chart fa-4x"></i>
                     <div class="content">

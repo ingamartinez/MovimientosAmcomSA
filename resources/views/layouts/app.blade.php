@@ -21,7 +21,7 @@
 
     <aside class="app-sidebar" id="sidebar">
         <div class="sidebar-header">
-            <a class="sidebar-brand" href="{{url('dashboard')}}"><span class="highlight2"></span><h2>Amcom SA</h2></a>
+            <a class="sidebar-brand" href="{{url('reportes')}}"><span class="highlight2"></span><h2>Amcom S.A</h2></a>
             <button type="button" class="sidebar-toggle">
                 <i class="fa fa-times"></i>
             </button>
@@ -29,19 +29,19 @@
         <div class="sidebar-menu">
             <ul class="sidebar-nav">
                 <li class="active">
-                    <a href="{{url('dashboard')}}">
+                    <a href="{{url('reportes')}}">
                         <div class="icon">
                             <i class="fa fa-tasks" aria-hidden="true"></i>
                         </div>
                         <div class="title">Reportes</div>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li class="active">
+                    <a href="{{url('colombiamovil')}}">
                         <div class="icon">
                             <i class="fa fa-mobile" aria-hidden="true"></i>
                         </div>
-                        <div class="title">Colombia Movil</div>
+                        <div class="title">Colombia Móvil</div>
                     </a>
                 </li>
                 <li class="dropdown ">
@@ -114,7 +114,11 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="footer-copyright">
-                        Copyright © 2017 Amcom SA.
+                        <a href="http://desarrolloexperto.com">
+
+                            <img src="{{asset('images/logoDE.png')}}" alt="Desarrollo Experto"> Creado Por Desarrollo Experto
+                            <b>© </b> 2017					</a>
+
                     </div>
                 </div>
             </div>

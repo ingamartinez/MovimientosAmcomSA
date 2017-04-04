@@ -13,12 +13,21 @@ use Illuminate\Support\Facades\Hash;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('auth.login');
+})->middleware('guest');
 
-Route::get('dashboard', function () {
-    return view('dashboard.index');
+
+
+Route::get('reportes', function () {
+    return view('dashboard.amcomsa');
 })->middleware('auth');
+
+Route::get('colombiamovil', function () {
+    return view('dashboard.colombia-movil');
+})->middleware('auth');
+
+
+
 
 //Rutas de Login
 Route::resource('login','LogController');

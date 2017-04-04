@@ -24,7 +24,7 @@ class LogController extends Controller
     {
 //        dd($request->all());
         if(Auth::attempt(['username'=>$request['username'],'password'=>$request['password']])) {
-            return redirect()->intended('dashboard');
+            return redirect()->intended('reportes');
         }
 
 
